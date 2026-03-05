@@ -1,12 +1,14 @@
 import './Cart.css';
 
-function Cart({ items, totalPrice, onRemoveItem }) {
+function Cart({ items, totalPrice, onRemoveItem, onOrder }) {
   const handleOrder = () => {
     if (items.length === 0) {
       alert('장바구니에 상품을 추가해주세요.');
       return;
     }
-    alert(`${items.length}개의 상품을 주문했습니다.\n총액: ${totalPrice.toLocaleString()}원`);
+    if (onOrder) {
+      onOrder();
+    }
   };
 
   return (
