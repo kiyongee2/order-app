@@ -1,0 +1,15 @@
+{
+  "name": "coffee-order-app",
+  "version": "1.0.0",
+  "description": "Coffee ordering app - Full stack application",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix ui\"",
+    "server": "npm run dev --prefix server",
+    "ui": "npm run dev --prefix ui",
+    "build": "npm run build --prefix ui",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

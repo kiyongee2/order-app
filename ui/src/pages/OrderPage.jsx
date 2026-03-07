@@ -98,12 +98,12 @@ function OrderPage({ onAddOrder }) {
     }, 0);
   };
 
-  const handleOrder = () => {
+  const handleOrder = async () => {
     if (cart.length === 0) {
       alert('장바구니에 상품을 추가해주세요.');
       return;
     }
-    onAddOrder(cart, getTotalPrice());
+    await onAddOrder(cart, getTotalPrice());
     alert(`${cart.length}개의 상품을 주문했습니다.\n총액: ${getTotalPrice().toLocaleString()}원`);
     setCart([]);
     setSelectedOptions({});
