@@ -33,7 +33,12 @@ function MenuCard({ menu, onSelectMenu, selectedOptions, onOptionsChange, onAddT
   return (
     <div className="menu-card">
       <div className="menu-image">
-        <div className="image-placeholder">{menu.image}</div>
+        <img 
+          src={`/${menu.image_url}`} 
+          alt={menu.name}
+          className="menu-image-item"
+          onError={(e) => { e.target.src = '/vite.svg'; }}
+        />
       </div>
       <div className="menu-info">
         <h3 className="menu-name">{menu.name}</h3>

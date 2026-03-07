@@ -9,42 +9,42 @@ const menuData = [
     name: '아메리카노(ICE)',
     price: 4000,
     description: '상큼한 맛의 차가운 아메리카노',
-    image: '🧊'
+    image_url: 'americano-ice.jpg'
   },
   {
     id: 2,
     name: '아메리카노(HOT)',
     price: 4000,
     description: '따뜻한 아메리카노',
-    image: '☕'
+    image_url: 'americano-hot.jpg'
   },
   {
     id: 3,
     name: '카페라떼',
     price: 5000,
     description: '부드러운 우유의 맛',
-    image: '🥛'
+    image_url: 'caffe-latte.jpg'
   },
   {
     id: 4,
     name: '카푸치노',
     price: 5000,
     description: '풍부한 거품의 카푸치노',
-    image: '🫧'
+    image_url: 'caffe-latte.jpg'
   },
   {
     id: 5,
     name: '에스프레소',
     price: 3500,
     description: '진한 맛의 에스프레소',
-    image: '💪'
+    image_url: 'americano-hot.jpg'
   },
   {
     id: 6,
     name: '모카',
     price: 5500,
     description: '초콜릿 향의 모카',
-    image: '🍫'
+    image_url: 'caffe-latte.jpg'
   }
 ];
 
